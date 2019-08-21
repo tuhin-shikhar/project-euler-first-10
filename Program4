@@ -1,0 +1,37 @@
+public class Program4
+{
+    public boolean isitPalindrome( String s )
+    {       
+        if ( s.length() % 2 != 0 )
+        {
+            s = s.substring( 0, s.length() / 2 ) + s.substring( (s.length() / 2) + 1);
+        }
+
+        return new StringBuffer( s.substring( 0, s.length() / 2) ).
+                                 reverse().toString().equals( s.substring( s.length() / 2) );
+    }
+
+
+    public static void main(String[] args)
+    {
+        Program4 e = new Program4();
+        long biggest = 0;
+
+        int a1 = 999, b1 = 999;
+        for (int b2 = b1; b2 > 0; b2--)
+            {
+                for (int a2 = a1; a2 > 0; a2--)
+                {
+                    if ( e.isitPalindrome( new Long(a2*bb).toString() ) )
+                    {
+                        if ( a2*b2 > biggest )
+                        {
+                            biggest = a2*b2;
+                        }
+                    }
+                }
+            }
+
+    System.out.println(biggest);
+    }
+}
