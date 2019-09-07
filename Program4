@@ -15,23 +15,23 @@ public class Program4
     public static void main(String[] args)
     {
         Program4 e = new Program4();
-        long biggest = 0;
+        long bigboi = 0;
 
-        int a1 = 999, b1 = 999;
+        int a1 = 999, b1 = 999; // doing it from 999 is easier to get the highest palindrome number.
         for (int b2 = b1; b2 > 0; b2--)
             {
                 for (int a2 = a1; a2 > 0; a2--)
                 {
-                    if ( e.isitPalindrome( new Long(a2*bb).toString() ) )
+                    if ( e.isitPalindrome( new Long(a2*b2).toString() ) )
                     {
-                        if ( a2*b2 > biggest )
+                        if ( a2*b2 > bigboi )
                         {
-                            biggest = a2*b2;
+                            bigboi = a2*b2;
                         }
                     }
                 }
             }
 
-    System.out.println(biggest);
+    System.out.println(bigboi);
     }
 }
