@@ -1,6 +1,6 @@
 public class Program6
 {
-    private long SumOfSquares()
+    private static long sumOfSquares()
     {
         long total = 0;
         for ( int i = 1; i < 101; i++)
@@ -11,7 +11,7 @@ public class Program6
         return total;
     }
 
-    private long SquareOfSums()
+    private static long squareOfSums()
     {
         long total = 0;
         for ( int i = 1; i < 101; i++ )
@@ -21,8 +21,8 @@ public class Program6
         return total*total;
     }
 
-    public long answer()
+    public static long main()
     {
-        return SquareOfSums() - SumOfSquares();
+        return squareOfSums() - sumOfSquares();
     }
 }
