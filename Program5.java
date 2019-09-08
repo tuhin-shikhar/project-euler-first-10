@@ -1,9 +1,9 @@
 public class Program5
 {
-    public void main()
+    public static void main()
     {
     long c = 21;
-    while (1==1)
+    while (true)
     {
         boolean blyat = true;
         for (int i = 1; i < 21; i++)
