@@ -3,7 +3,7 @@ public class Problem7
 
     
     /* returns the nth prime number */
-    public static long main() 
+    public static long main(String[] args) 
     {
         int numberOfPrimes = 0;
         long prime = 1;
